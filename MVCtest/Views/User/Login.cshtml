@@ -1,0 +1,71 @@
+﻿@model MVCtest.Models.UserModel
+
+@{ Layout = null;}
+
+@{
+    ViewBag.Title = "View";
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>MVC真有意思</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+    
+    <div>   
+        
+        name:
+        
+        
+        </div>
+    
+    <div>
+        
+        @Html.TextBoxFor(model => Model.UserName)
+
+
+    </div>
+    
+
+    <div>
+        
+        password：
+
+    </div>
+    
+    
+    <div>
+        
+
+        @Html.PasswordFor(model=>model.Password)
+
+
+
+    </div>
+
+    <div>
+        
+
+
+        <input type="submit" value="login">
+    </div>
+
+
+
+    
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
